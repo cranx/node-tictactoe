@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>node.js tic-tac-toe by cranx</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://localhost');
+        socket.on('test', function (data) {
+            console.log('testdata', data);
+            socket.emit('fromclient', {my: 'data'});
+        });
+    </script>
+</head>
+<body>
+    <h2>Welcome!</h2>
+</body>
+</html>
