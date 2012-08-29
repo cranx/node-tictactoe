@@ -43,7 +43,7 @@
 
     fs.writeFile('./public/js/config.js', clientConfig, function (err) {
         if (err) {
-            console.log(err);
+            console.error(err);
         }
     });
 
