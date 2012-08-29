@@ -50,6 +50,16 @@ $(function () {
     socket.on('connect', function () {
         $start.show();
         updateText($status, 'Connection established');
+
+        $('#board').on('click', 'td', function () {
+            var $this = $(this);
+
+            if (team !== turnTeam || $this.text() !== '') {
+                return;
+            }
+
+            socket.emit('turn', {x: $this.attr('--data-x'), y: $this.attr('--data-y')});
+        });
     });
 
     socket.on('waitingForOpponent', function () {
@@ -60,15 +70,6 @@ $(function () {
         team = data.team;
         updateText($team, 'You are playing for ' + (data.team === 1 ? 'X' : 'O'));
         updateText($status, 'Game started');
-
-        $('#board').on('click', 'td', function () {
-            if (team !== turnTeam) {
-                return;
-            }
-
-            var $this = $(this);
-            socket.emit('turn', {x: $this.attr('--data-x'), y: $this.attr('--data-y')});
-        });
     });
 
     socket.on('gameStateChanged', function (data) {
