@@ -4,5 +4,6 @@
  */
 
 module.exports = {
-    httpPort: 80
+    httpPort         : 80,
+    httpHost         : 'localhost'
 };
