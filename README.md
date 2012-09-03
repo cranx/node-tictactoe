@@ -1,6 +1,6 @@
 Original game http://en.wikipedia.org/wiki/Tic-tac-toe
 
-Hi! Its my first project on gitHub. Simple multiplayer game written on node.js using express, async and socket.io
+node-tictactoe is simple multiplayer game written in CoffeeScript on node.js using express, async and socket.io
 
 There is no cookie-authorization, so you can start several games in several tabs of your browser.
 If you close tab with game or browser window or lost socket.io connection for any other reason you will never continue lost game.
