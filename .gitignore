@@ -1,5 +1,7 @@
 .*
 
+config.coffee
+
 node_modules/
 
 public/js/*
