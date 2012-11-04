@@ -17,4 +17,4 @@ To install game:
 Configure:
 
 There is default config file `config.default.coffee`
-You can override any setting by creating you own `config.coffee` with the same structure as default config
+You can override any setting by creating your own `config.coffee` with the same structure as default config
