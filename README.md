@@ -2,7 +2,7 @@ Original game http://en.wikipedia.org/wiki/Tic-tac-toe
 
 `node-tictactoe` is a simple multiplayer game written in CoffeeScript on node.js using express, async and socket.io.
 
-There is no authorization system so you can start several connections from different browser tabs. Also there is no way to reconnect to the game.
+There is no authorization system so you can open several connections from different browser tabs. Also there is no way to reconnect to the game.
 
 You can [try it here](http://node-tictactoe.herokuapp.com/).
 
