@@ -1,4 +1,3 @@
-Original game http://en.wikipedia.org/wiki/Tic-tac-toe
 
 `node-tictactoe` is a simple multiplayer game written in CoffeeScript on node.js using express, async and socket.io.
 
